@@ -1,34 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# AI-Gaming-Chatbot
+
+### A Next-Gen Conversational Interface for Gamers
+
+![Tech Stack](https://skillicons.dev/icons?i=nextjs,react,tailwind,ts,openai)
+
+## Overview
+
+**AI-Gaming-Chatbot** is a specialized conversational interface designed to assist gamers. Built on the powerful **Next.js 13** framework (bootstrapped with `create-next-app`), it utilizes a modern, responsive design system powered by **Tailwind CSS**.
+
+The project focuses on providing a seamless, low-latency chat experience for gaming queries, strategy assistance, or NPC interactions, powered by OpenAI's **GPT-3.5-turbo**.
+
+## Tech Stack
+
+- **Framework:** [Next.js 13](https://nextjs.org/) (App Router Architecture)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Font Optimization:** [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) (Inter)
+- **AI Engine:** OpenAI GPT-3.5 Turbo
 
 ## Getting Started
 
-First, run the development server:
+Follow these steps to run the chatbot locally:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+1.  **Clone the repository:**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    ```bash
+    git clone [https://github.com/CyberCoder-IITM/AI-Gaming-Chatbot.git](https://github.com/CyberCoder-IITM/AI-Gaming-Chatbot.git)
+    cd AI-Gaming-Chatbot
+    ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+2.  **Install dependencies:**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-## Learn More
+3.  **Run the development server:**
 
-To learn more about Next.js, take a look at the following resources:
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4.  **Open the App:**
+    Visit [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The easiest way to deploy your Next.js app is to use the **Vercel Platform** from the creators of Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+_Forked from [raka334/BB_Ai](https://github.com/raka334/BB_Ai)_
