@@ -1,27 +1,32 @@
-# Workspace
+# BB AI
 
-## Overview
+A React + Vite web app ported from a Next.js/Vercel project. Displays a simple landing page with a navbar (including the BB logo) and a hero section with the tagline "You Ask We Answer" and a "Get Started" button.
 
-pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
+## Architecture
 
-## Stack
+- **Frontend**: `artifacts/bb-ai/` — React + Vite app (Tailwind CSS v4, wouter routing, shadcn/ui components)
+- **API Server**: `artifacts/api-server/` — Express server (not yet used by this app)
+- **Preview path**: `/` (root)
 
-- **Monorepo tool**: pnpm workspaces
-- **Node.js version**: 24
-- **Package manager**: pnpm
-- **TypeScript version**: 5.9
-- **API framework**: Express 5
-- **Database**: PostgreSQL + Drizzle ORM
-- **Validation**: Zod (`zod/v4`), `drizzle-zod`
-- **API codegen**: Orval (from OpenAPI spec)
-- **Build**: esbuild (CJS bundle)
+## Key Files
 
-## Key Commands
+- `artifacts/bb-ai/src/App.tsx` — Main app with wouter router
+- `artifacts/bb-ai/src/components/Navbar.tsx` — Navigation bar with logo, Home, Chat, About us, Support Us links
+- `artifacts/bb-ai/src/components/Hero.tsx` — Hero section with "You Ask We Answer" headline and "Get Started" button
+- `artifacts/bb-ai/src/index.css` — Theme with brand colors (purple #8D16A6, cyan #01FFFC)
+- `artifacts/bb-ai/public/bb_logo.png` — BB AI logo
+- `artifacts/bb-ai/index.html` — Entry HTML with Inter font from Google Fonts
 
-- `pnpm run typecheck` — full typecheck across all packages
-- `pnpm run build` — typecheck + build all packages
-- `pnpm --filter @workspace/api-spec run codegen` — regenerate API hooks and Zod schemas from OpenAPI spec
-- `pnpm --filter @workspace/db run push` — push DB schema changes (dev only)
-- `pnpm --filter @workspace/api-server run dev` — run API server locally
+## Brand
 
-See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+- Primary color: Purple (`#8D16A6`)
+- Accent color: Cyan (`#01FFFC`)
+- Font: Inter
+
+## Port Notes
+
+Ported from Next.js 13 (App Router) to Vite + React:
+- `next/image` → `<img>` tags
+- `next/font/google` → Google Fonts `<link>` in index.html
+- `app/page.js` → route component in App.tsx
+- No API routes existed — api-server is scaffolded but unused
